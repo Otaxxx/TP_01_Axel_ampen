@@ -51,6 +51,14 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+    const newImage = document.createElement('img');
+    newImage.src = "https://upload.wikimedia.org/wikipedia/commons/b/bd/UPHF_logo.svg";
+    newImage.width = 200;
+    const googleLogo = document.querySelector('#Image');
+    googleLogo.insertAdjacentElement('afterend', newImage);
+});
+
 
 
 
