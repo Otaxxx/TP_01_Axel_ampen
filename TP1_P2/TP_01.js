@@ -24,6 +24,9 @@ const volumeLabel = document.querySelector('#volume-label');
 const typeLabel = document.querySelector('#volume-type');
 const radios = document.querySelectorAll('input[name="options"]');
 
+slider.max = 100;
+console.log("Valeur max du volume :", slider.max);
+
 function update() {
     volumeLabel.textContent = slider.value;
     let type = "";
@@ -58,6 +61,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const googleLogo = document.querySelector('#Image');
     googleLogo.insertAdjacentElement('afterend', newImage);
 });
+
+
 
 
 
