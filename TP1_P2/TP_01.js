@@ -19,20 +19,25 @@ nextSiblingElement.textContent = 'Casque';
 
 nextSiblingElement = document.querySelector('#option3').nextElementSibling;
 nextSiblingElement.textContent = 'Bluetooth';
+const slider = document.querySelector('.slider input[type="range"]');
+const volumeLabel = document.querySelector('#volume-label');
+const typeLabel = document.querySelector('#volume-type');
+const radios = document.querySelectorAll('input[name="options"]');
 
-document.addEventListener('DOMContentLoaded', function() {
-    const volumeLabel = document.querySelector('#volume-label');
-    const radios = document.querySelectorAll('input[name="options"]');
-    
-    radios.forEach(radio => {
-        radio.addEventListener('change', function() {
-            if (this.value == "1") {
-                volumeLabel.textContent = "Volume HP";
-            } else if (this.value == "2") {
-                volumeLabel.textContent = "Volume Casque";
-            } else if (this.value == "3") {
-                volumeLabel.textContent = "Volume Bluetooth";
-            }
-        });
+function update() {
+    volumeLabel.textContent = slider.value;
+    let type = "";
+    radios.forEach(r => {
+        if (r.checked) {
+            if (r.value === "1") type = "HP";
+            else if (r.value === "2") type = "Casque";
+            else if (r.value === "3") type = "Bluetooth";
+        }
     });
-});
+    typeLabel.textContent = type;
+}
+slider.addEventListener('input', update);
+radios.forEach(r => r.addEventListener('change', update));
+update();
+
+
