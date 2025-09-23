@@ -41,3 +41,18 @@ radios.forEach(r => r.addEventListener('change', update));
 update();
 
 
+
+document.addEventListener('DOMContentLoaded', function() {
+    document.querySelector("#cocher").textContent = "Mute";
+    const checkbox = document.querySelector('#caseee');
+    const slider = document.querySelector('.slider input[type="range"]');
+    checkbox.addEventListener('change', function() {
+        slider.disabled = checkbox.checked; 
+    });
+});
+
+
+
+
+
+
