@@ -1,0 +1,19 @@
+## Description
+Ce projet est un TP d'initiation au JavaScript, visant à manipuler le DOM et gérer des événements. Il comprend plusieurs exercices pour modifier des éléments HTML, gérer des interactions utilisateur et mettre à jour dynamiquement le contenu de la page web.
+
+## Installation
+1. Cloner le dépôt GitHub :
+    ```bash
+    git clone https://github.com/username/TP1_Axel_ampen.git
+    ```
+2. Ouvrir le fichier `index.html` dans un navigateur web.
+
+## Prerequis
+- Un navigateur web moderne (Chrome, Firefox, Edge, etc.)
+- Connaissances de base en HTML, CSS et JavaScript
+- Un éditeur de code (VSCode, Sublime Text, etc.)
+
+## Outils
+- [Visual Studio Code](https://code.visualstudio.com/) - Éditeur de code
+- [Git](https://git-scm.com/) - Système de contrôle de version
+- [Node.js](https://nodejs.org/) - Environnement d'exécution JavaScript
