@@ -1,5 +1,6 @@
 document.querySelector('#wiki').href = 'https://fr.wikipedia.org/wiki/Wikipédia:Accueil_principal';
 
+// Changement du lien
 
 document.querySelector('#btn').addEventListener('click', function() {
     let texte = document.querySelector('#txt').value;
@@ -9,6 +10,8 @@ document.querySelector('#btn').addEventListener('click', function() {
          alert('Il faut mettre Oui ou Non');
     }
 });
+
+// Bouton avec alerte en fontion du texte entré
 
 
 nextSiblingElement = document.querySelector('#option1').nextElementSibling;
@@ -23,6 +26,8 @@ const slider = document.querySelector('.slider input[type="range"]');
 const volumeLabel = document.querySelector('#volume-label');
 const typeLabel = document.querySelector('#volume-type');
 const radios = document.querySelectorAll('input[name="options"]');
+
+// Modification des labels
 
 slider.max = 100;
 console.log("Valeur max du volume :", slider.max);
@@ -43,6 +48,8 @@ slider.addEventListener('input', update);
 radios.forEach(r => r.addEventListener('change', update));
 update();
 
+// Slider fonctionnel et labels mis à jour
+
 
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -54,6 +61,8 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+// Checkbox qui désactive le slider
+
 document.addEventListener('DOMContentLoaded', function() {
     const newImage = document.createElement('img');
     newImage.src = "https://upload.wikimedia.org/wikipedia/commons/b/bd/UPHF_logo.svg";
@@ -62,8 +71,7 @@ document.addEventListener('DOMContentLoaded', function() {
     googleLogo.insertAdjacentElement('afterend', newImage);
 });
 
-
-
+// Ajout d'une image
 
 
 
